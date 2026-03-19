@@ -1,0 +1,19 @@
+definition_version: 1
+streamlit:
+  name: linkedin_dashboard
+  stage: linkedin.raw.streamlit_stage
+  query_warehouse: COMPUTE_WH
+  main_file: streamlit/app1_offres.py
+  pages:
+    - name: "Offres par localisation"
+      file: streamlit/app1_offres.py
+    - name: "Salaires par poste"
+      file: streamlit/app2_salaires.py
+    - name: "Taille des entreprises"
+      file: streamlit/app3_taille.py
+    - name: "Secteurs d'activite"
+      file: streamlit/app4_secteurs.py
+    - name: "Teletravail vs Presentiel"
+      file: streamlit/app5_teletravail.py
+    - name: "Niveau d'experience"
+      file: streamlit/app6_experience.py
